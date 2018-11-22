@@ -1,0 +1,48 @@
+{{ partial "header.html" . }}
+
+<div id="site-wrap">
+  <main class="profile">
+    <div id="profile-avatar">
+      <div><img src="dean-glueckler.JPG" alt="dean glueckler avatar" /></div>
+    </div>
+    <div class="profile-descrip">
+      <h2>{{ .Params.profilename }}</h2>
+      <h3 id="typed-lock"></h3>
+    </div>
+    <div id="slick-carousel-lock">
+      <div class="carousel-img-wrap">
+        <img src="logos/react-logo.png" alt="react logo" />
+      </div>
+      <div class="carousel-img-wrap">
+        <img src="logos/redux-logo.png" alt="redux logo" />
+      </div>
+      <div class="carousel-img-wrap">
+        <img src="logos/graphql-logo.png" alt="graphql logo" />
+      </div>
+      <div class="carousel-img-wrap">
+        <img src="logos/materialui-logo.png" alt="material ui logo" />
+      </div>
+      <div class="carousel-img-wrap">
+        <img src="logos/webpack-logo.jpg" alt="webpack logo" />
+      </div>
+      <div class="carousel-img-wrap">
+        <img src="logos/sass-logo.png" alt="sass logo" />
+      </div>
+      <div class="carousel-img-wrap">
+        <img src="logos/node-logo.png" alt="node logo" />
+      </div>
+      <div class="carousel-img-wrap">
+        <img src="logos/rn-logo.png" alt="react native logo" />
+      </div>
+      <div class="carousel-img-wrap">
+        <img src="logos/vue-logo.png" alt="vue logo" />
+      </div>
+    </div>
+    <div class="profile-blurb">
+      <h3>Blurb..</h3>
+      {{ .Content }}
+    </div>
+  </main>
+</div>
+
+{{ partial "footer.html" . }}
