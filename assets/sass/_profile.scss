@@ -1,12 +1,12 @@
 .profile {
   width: 100%;
-  padding: 25vh 25px 0;
+  padding-top: 50px;
   display: flex;
   align-items: center;
   flex-direction: column;
   box-sizing: border-box;
   @include large {
-    padding: 200px 0 0;
+    padding-top: 100px;
   }
 
   #profile-avatar {
@@ -39,6 +39,13 @@
 
   #typed-lock {
     min-height: 26px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 20px 60px;
+
+    @include large {
+      font-size: 20px;
+    }
   }
 
   #slick-carousel-lock {

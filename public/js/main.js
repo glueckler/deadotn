@@ -5,31 +5,27 @@ $(window).load(function() {
   setTimeout(sendLoadingScreenToBack, 300);
 
   //
-  // carousel
-  var slickLock = $('#slick-carousel-lock');
-  slickLock.slick({
-    // autoplay: true,
-    // autoplaySpeed: 6000,
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    pauseOnHover: false,
-    adaptiveHeight: true,
-    prevArrow: null,
-    nextArrow: null,
-  });
-
-  //
   // typing
   var typed = new Typed('#typed-lock', {
-    strings: ['Full Stack Web Development', 'Single Page Applications', 'API Development', 'Exploration..', 'Responsive Web Design'],
-    typeSpeed: 100,
-    backSpeed: 50,
+    strings: [
+      `hi welcome to my quick spot on the internetz.  
+      <br/><br/>
+      i do web development.  i do multimedia stuff.  i do music.
+      <br/><br/>
+      i'm a creative and an engineer.   
+      <br/><br/>
+      art brings wonder and tech brings possibility.
+      <br/><br/>
+      my mission is to combine the two.
+      <br/><br/>
+      if you're curious please get in touch, or follow some of my links.
+      `,
+    ],
+    typeSpeed: 35,
+    backSpeed: 30,
     showCursor: false,
-    loop: true,
-    onStringTyped() {
-      slickLock.slick('slickNext');
-    }
+    loop: false,
+    backDelay: 3000
   });
 });
 
